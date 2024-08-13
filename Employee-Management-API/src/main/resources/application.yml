@@ -1,0 +1,20 @@
+# Configuration for Tomcat Sever
+
+server:
+  port: 7777
+
+# Configuration for Postgresql JDBC
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb_01
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+# Configuration for Postgresql Hibernate
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
